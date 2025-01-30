@@ -354,29 +354,71 @@ opacity: 1;
     }
 
     /*----------footer---------*/
-    .footer{
-       width: 100%;
-       text-align: center;
-       padding: 30px 0;
-    }
-    .footer h4{
-        margin-bottom: 25px;
-        margin-top: 20px;
-        font-weight: 600;
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #f9f9f9; /* إضافة لون خفيف للخلفية */
+}
 
-    }
+.footer h4 {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #333;
+}
 
-    .footer .fa{
-        color: #f44336  ;
-        margin: 0 13px;
-        cursor: pointer;
-        padding: 18px 0;
+.footer p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer .social-icons {
+    margin-top: 15px;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer .fa {
+    color: #f44336;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* تأثير عند تمرير الماوس */
+.footer .social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.footer .fa:hover {
+    color: #d32f2f;
+}
+
+/* تحسين الاستجابة على الشاشات الصغيرة */
+@media (max-width: 700px) {
+    .footer {
+        padding: 15px 0;
     }
-    @media(max-width: 700px){
-        .footer{
-            padding: 10px 0;
-        }
+    .footer h4 {
+        font-size: 20px;
     }
+    .footer p {
+        font-size: 14px;
+    }
+    .footer .fa {
+        font-size: 20px;
+        padding: 8px;
+    }
+}
+
 
 
     /*----------About us----------*/
